@@ -1,5 +1,3 @@
-package ARRAY;
-
 import java.util.HashMap;
 
 public class TwoSum {
@@ -17,7 +15,7 @@ public class TwoSum {
             map.put(nums[i], i);
         }
 
-        return new int[]{};
+        return new int[]{-1, -1};
     }
 
     public static void main(String[] args) {
@@ -26,6 +24,7 @@ public class TwoSum {
 
         int[] res = twoSum(nums, target);
 
-        System.out.println(res[0] + " " + res[1]);
+        System.out.println("Index1: " + res[0]);
+        System.out.println("Index2: " + res[1]);
     }
 }
